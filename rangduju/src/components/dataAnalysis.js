@@ -39,7 +39,7 @@ class DataAnalysis extends React.Component {
       method: 'GET',
       headers: {
         'Content-Type': 'application/json',
-        'wechat-key': '8538e210-9a14-4522-b170-3c406f4d8e66'
+        'wechat-key': 'e8d1b281-3da6-43e9-ac43-52f016787e73'
       }
     }
     for(let i=6;i<13;i++){
