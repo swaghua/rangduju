@@ -29,7 +29,7 @@ class Foot extends React.Component {
                     <label className="label_frist">条款</label>
                     <label>
                         <a href="https://mp.weixin.qq.com/s/YoqpzK5aiqZF8lNLZVchEg" rel="noopener noreferrer" target="_blank">
-                        使用条款
+                        服务条款
                         </a>
                         </label>
                     <label>
