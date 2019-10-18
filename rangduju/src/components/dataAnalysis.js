@@ -38,8 +38,7 @@ class DataAnalysis extends React.Component {
       mode: 'cors',
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json',
-        'wechat-key': 'e8d1b281-3da6-43e9-ac43-52f016787e73'
+        'Content-Type': 'application/json'
       }
     }
     for(let i=6;i<13;i++){
