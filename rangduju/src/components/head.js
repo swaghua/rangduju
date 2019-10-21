@@ -21,14 +21,14 @@ class Head extends React.Component {
     });
   };
   
-  cscrollToAnchor = (anchorName) => {
-    if (anchorName) {
-        // 找到锚点
-        let anchorElement = document.getElementById(anchorName.key);
-        // 如果对应id的锚点存在，就跳转到锚点
-        if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
-    }
-  }
+  // cscrollToAnchor = (anchorName) => {
+  //   if (anchorName) {
+  //       // 找到锚点
+  //       let anchorElement = document.getElementById(anchorName.key);
+  //       // 如果对应id的锚点存在，就跳转到锚点
+  //       if(anchorElement) { anchorElement.scrollIntoView({block: 'start', behavior: 'smooth'}); }
+  //   }
+  // }
 
   render() {
     return (
@@ -48,11 +48,11 @@ class Head extends React.Component {
         <Menu.Item key="about">
           <Link to="/about">关于我们</Link>
         </Menu.Item>
-        <Menu.Item key="landlord" >
+        <Menu.Item key="landlord">
           <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank">成为房东</a>
         </Menu.Item>
-        <Menu.Item key="foot" onClick={this.cscrollToAnchor}>
-          联系我们
+        <Menu.Item key="foot">
+        <a href='http://rangduju.mikecrm.com/SlDriig' rel="noopener noreferrer" target="_blank" className='highlight'>潜力预测</a>
         </Menu.Item>
       </Menu>
       </div>

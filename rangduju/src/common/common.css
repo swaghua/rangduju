@@ -1,7 +1,10 @@
 .distance{
     padding: 0 19%;
 }
-
+.head .highlight{
+    color: #08CC16!important;
+    font-weight: 600;
+}
 .text-center{
     text-align: center;
 }
@@ -347,7 +350,7 @@ a{
     margin-top: 1.5625rem;
     margin-bottom: 5.9375rem; 
 }
-.doubt dt{
+/* .doubt dt{
     font-size: 1.25rem;
     font-weight: 600;
     color: #4D4D4D;
@@ -360,6 +363,27 @@ a{
     line-height:34px;
     margin: 0;
     margin-bottom: 5.5625rem;
+} */
+.doubt .ant-collapse-item {
+    border: none!important;
+}
+.doubt .list-a{
+    margin-bottom: 5.5625rem;
+}
+.doubt .ant-collapse-header{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4D4D4D;
+    margin-bottom: 1.75rem;
+}
+.doubt .ant-collapse-content-box{
+    font-size: .875rem;
+    font-weight: 400;
+    color: #333333;
+    line-height:34px;
+    margin: 0;
+    margin-left: 2rem;
+    margin-bottom: 2.5625rem;
 }
  .doubt .ant-radio-button-wrapper{
     font-size: .625rem;
