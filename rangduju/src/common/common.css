@@ -2,8 +2,8 @@
     padding: 0 19%;
 }
 .head .highlight{
-    color: #08CC16!important;
-    font-weight: 600;
+    padding: 0 .625rem;
+    border: .0625rem solid #08CC16;
 }
 .text-center{
     text-align: center;
@@ -378,6 +378,7 @@ a{
 }
 .doubt .ant-collapse-content-box{
     font-size: .875rem;
+    text-indent: 2rem;
     font-weight: 400;
     color: #333333;
     line-height:34px;
