@@ -109,8 +109,9 @@ color: #08CC16!important;
 .foot .zu1{
     display: flex;
     justify-content: space-around;
-    width: 100px;
+    width: 120px;
     margin: auto;
+    margin-bottom: 2rem;
 }
 .foot .zu1 > a > img{
     width: 1.25rem;
