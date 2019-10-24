@@ -39,8 +39,14 @@ class Foot extends React.Component {
                         </label>
                 </div>
                 <div className="text-center">
-                    <label className="label_frist">微信公众号</label>
+                    <label className="label_frist">媒体平台</label>
                     <img src={require("../images/2wm.jpg")} className="qrcode" alt="公众号"></img>
+                    <div className="text1">微信公众号</div>
+                    <div className="zu1">
+                        <a href="https://weibo.com/u/7239677758?is_hot=1" rel="noopener noreferrer" target="_blank"><img src={require("../images/wb.png")} ait="微博"></img></a>
+                        <a href="https://www.zhihu.com/org/rang-du-ju/activities" rel="noopener noreferrer" target="_blank"><img src={require("../images/zh.png")} ait="知乎"></img></a>
+                        <a href="https://www.linkedin.com/company/rangduju" rel="noopener noreferrer" target="_blank"><img src={require("../images/ly.jpg")} ait="领英"></img></a>
+                    </div>
                 </div>
             </div>
             <div className='foot_bottom'>
