@@ -8,6 +8,9 @@ import Top from './top';
 
 
 class Home extends React.Component {
+    componentDidMount() {
+        document.title = '让渡居-数字科技驱动的城市民宿管理服务机构'
+    }
     render() {
         return (
             <div className="first">

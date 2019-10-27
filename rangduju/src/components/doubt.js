@@ -27,6 +27,9 @@ class Doubt extends React.Component {
             }]
         }
     }
+    componentDidMount() {
+        document.title = '常见疑惑-让渡居'
+    }
     onChange = e => {
         console.log(`radio checked:${e.target.value}`);
         let list;
