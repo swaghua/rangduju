@@ -94,6 +94,9 @@ color: #08CC16!important;
     margin-bottom: 2.1875rem;
     white-space: nowrap;
 }
+.foot .contact-info {
+    cursor: text;
+}
 .foot .nudge{
     padding-left: 10%;
 }

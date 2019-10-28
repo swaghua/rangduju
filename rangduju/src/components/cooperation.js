@@ -31,6 +31,9 @@ class Cooperation extends React.Component{
             }]
         }
     }
+    componentDidMount() {
+        document.title = '如何合作-让渡居'
+    }
     render(){
         return(
             <div className="cooperation">

@@ -1,6 +1,9 @@
 import React from "react";
 
 class About extends React.Component{
+    componentDidMount() {
+        document.title = '关于我们-让渡居'
+    }
     render(){
         return (
             <div className="about">
