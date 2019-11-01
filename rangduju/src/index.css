@@ -1,12 +1,23 @@
+/*@font-face {*/
+/*  font-family: 'webfont';*/
+/*  font-display: swap;*/
+/*  src: url('./assets/webfont_kf6temdiijo/webfont.eot'); !* IE9 *!*/
+/*  src: url('./assets/webfont_kf6temdiijo/webfont.eot?#iefix') format('embedded-opentype'), !* IE6-IE8 *!*/
+/*  url('./assets/webfont_kf6temdiijo/webfont.woff2') format('woff2'),*/
+/*  url('./assets/webfont_kf6temdiijo/webfont.woff') format('woff'), !* chrome、firefox *!*/
+/*  url('./assets/webfont_kf6temdiijo/webfont.ttf') format('truetype'), !* chrome、firefox、opera、Safari, Android, iOS 4.2+*!*/
+/*  url('./assets/webfont_kf6temdiijo/webfont.svg#webfont') format('svg'); !* iOS 4.1- *!*/
+/*}*/
+
 @font-face {
   font-family: 'webfont';
   font-display: swap;
-  src: url('./assets/webfont_kf6temdiijo/webfont.eot'); /* IE9 */
-  src: url('./assets/webfont_kf6temdiijo/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-  url('./assets/webfont_kf6temdiijo/webfont.woff2') format('woff2'),
-  url('./assets/webfont_kf6temdiijo/webfont.woff') format('woff'), /* chrome、firefox */
-  url('./assets/webfont_kf6temdiijo/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
-  url('./assets/webfont_kf6temdiijo/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+  src: url('//at.alicdn.com/t/webfont_e3goby801c.eot'); /* IE9*/
+  src: url('//at.alicdn.com/t/webfont_e3goby801c.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/webfont_e3goby801c.woff2') format('woff2'),
+  url('//at.alicdn.com/t/webfont_e3goby801c.woff') format('woff'), /* chrome、firefox */
+  url('//at.alicdn.com/t/webfont_e3goby801c.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/webfont_e3goby801c.svg#NotoSansHans-DemiLight') format('svg'); /* iOS 4.1- */
 }
 
 body {
