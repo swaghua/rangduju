@@ -353,12 +353,23 @@ color: #08CC16!important;
     margin: 0;
     margin-bottom: 5.5625rem;
 }
+/*.about .title{*/
+/*    font-size: 1.625rem;*/
+/*    font-weight: 600;*/
+/*    color: #4D4D4D;*/
+/*    margin-top: 10rem;*/
+/*    margin-bottom: 2.5rem;*/
+/*    display: block;*/
+/*}*/
+.about{
+    margin-top: 10rem;
+}
 .about .title{
-    font-size: 1.625rem;
+    font-size: 1.25rem;
     font-weight: 600;
     color: #4D4D4D;
-    margin-top: 10rem;
-    margin-bottom: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1.75rem;
     display: block;
 }
 .about .synopsis{
@@ -366,16 +377,10 @@ color: #08CC16!important;
     font-size: 400;
     color:#000;
     line-height: 2.125rem;
-    margin-bottom: 8.0625rem; 
+    /*margin-bottom: 8.0625rem; */
 }
 .about .synopsis a{
     color:#08CC16!important;
-}
-.about .teamtitle{
-    font-size: 1.25rem;
-    font-weight: 600;
-    color: #4D4D4D;
-    margin-bottom: 1.75rem;
 }
 .about .exhibition{
     margin-top: 9.0625rem;
