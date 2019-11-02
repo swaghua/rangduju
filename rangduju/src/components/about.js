@@ -13,7 +13,7 @@ class About extends React.Component{
                 </div>
                 <div className="distance">
                     <div className="title">投资人</div>
-                    <img src={require("../images/about-delsk-logo.png")} alt="delsk"></img>
+                    <a href="http://www.delsk.com/" rel="noopener noreferrer" target="_blank"><img src={require("../images/about-delsk-logo.png")} alt="delsk"></img></a>
                 </div>
                 <div className="distance">
                     <div className="title">团队成员</div>
