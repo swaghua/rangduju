@@ -86,6 +86,7 @@ class DataAnalysis extends React.Component {
           xAxisIndex: 0,
           start: 0,
           end: 60,
+          bottom: 20,
           height: 5,
           borderColor: "#ccc",
           backgroundColor: '#ccc',
