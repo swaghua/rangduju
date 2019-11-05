@@ -5,6 +5,10 @@
     padding: 0 .625rem;
     border: .0625rem solid #08CC16;
 } */
+.distancephone{
+    padding: 0 19%;
+}
+
 .text-center{
     text-align: center;
 }
@@ -335,6 +339,12 @@ color: #08CC16!important;
     }
     .demo{
         padding: 2rem 0!important;
+    }
+    .demo .title{
+        padding: 0 9%!important;
+    }
+    .distancephone{
+        padding: 0;
     }
 }
 .cooperation img{
@@ -811,9 +821,10 @@ color: #08CC16!important;
 .first .infiniteListExample{padding-right: 1rem; padding-left:0}
 
 .demo{
-    padding: 5rem 19%;
+ padding: 5rem 0;
 }
 .demo .title{
+    padding: 0 19%;
     font-size: 1.25rem;
     font-weight: 600;
     color: #4D4D4D;

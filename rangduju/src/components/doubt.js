@@ -56,8 +56,8 @@ class Doubt extends React.Component {
     // }
     render() {
         return (
-            <div className="doubt distance">
-                <div className="text-center">
+            <div className="doubt">
+                <div className="text-center distance">
                     <img src={require("../images/chahua2.png")} alt="常见疑惑"></img>
                 </div>
                 {/* <div className='list-a'>
@@ -75,7 +75,7 @@ class Doubt extends React.Component {
                         })
                     }
                 </div> */}
-                <div><iframe className="airtable-embed" src="https://airtable.com/embed/shrp0X4TodpxB44v4?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style={{background: 'transparent', border: '1px solid #ccc',marginBottom:'6rem'}}></iframe></div>
+                <div className='distancephone'><iframe className="airtable-embed" src="https://airtable.com/embed/shrp0X4TodpxB44v4?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style={{background: 'transparent', border: '1px solid #ccc',marginBottom:'6rem'}}></iframe></div>
             </div>
         )
     }
