@@ -3,6 +3,7 @@ import { Menu } from 'antd';
 import { BrowserRouter  as Router, Route, Link } from 'react-router-dom';
 
 import Home from './home';
+import Demo from './demo';
 import Cooperation from './cooperation';
 import About from './about';
 import Doubt from './doubt';
@@ -39,6 +40,9 @@ class Head extends React.Component {
         <Menu.Item key="home"  className="home">
           <Link to="/"><img src={require("../images/logo.png")} alt="返回首页"></img></Link>
         </Menu.Item>
+        <Menu.Item key="demo">
+          <Link to="/demo">房源展示</Link>
+        </Menu.Item>
         <Menu.Item key="faq">
           <Link to="/faq">常见疑惑</Link>
         </Menu.Item>
@@ -57,6 +61,7 @@ class Head extends React.Component {
       </Menu>
       </div>
       <Route exact path="/" component={Home}></Route>
+      <Route path="/demo" component={Demo}></Route>
       <Route path="/faq" component={Doubt}></Route>
       <Route path="/cooperation" component={Cooperation}></Route>
       <Route path="/about" component={About}></Route>
