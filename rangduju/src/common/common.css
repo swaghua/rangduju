@@ -333,6 +333,9 @@ color: #08CC16!important;
     .operate .item .item_title > p:nth-child(2){
         display: none;
     }
+    .demo{
+        padding: 2rem 0!important;
+    }
 }
 .cooperation img{
     width: 91%;
@@ -807,3 +810,13 @@ color: #08CC16!important;
 .first .infiniteListExample > li{ padding-left:0!important;margin:0!important;list-style:none}
 .first .infiniteListExample{padding-right: 1rem; padding-left:0}
 
+.demo{
+    padding: 5rem 19%;
+}
+.demo .title{
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4D4D4D;
+    margin-bottom: 1.75rem;
+    display: block;
+}
