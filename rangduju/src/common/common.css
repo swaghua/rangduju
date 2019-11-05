@@ -343,6 +343,9 @@ color: #08CC16!important;
     .demo .title{
         padding: 0 9%!important;
     }
+    .doubt .title{
+        padding: 0 9%!important;
+    }
     .distancephone{
         padding: 0;
     }
@@ -824,6 +827,14 @@ color: #08CC16!important;
  padding: 5rem 0;
 }
 .demo .title{
+    padding: 0 19%;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #4D4D4D;
+    margin-bottom: 1.75rem;
+    display: block;
+}
+.doubt .title{
     padding: 0 19%;
     font-size: 1.25rem;
     font-weight: 600;

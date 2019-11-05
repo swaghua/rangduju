@@ -75,6 +75,7 @@ class Doubt extends React.Component {
                         })
                     }
                 </div> */}
+                <div className='distance title'>支持根据分类进行问题筛选/排序；支持根据关键字搜索问题；支持打印。</div>
                 <div className='distancephone'><iframe className="airtable-embed" src="https://airtable.com/embed/shrp0X4TodpxB44v4?backgroundColor=blue&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="633" style={{background: 'transparent', border: '1px solid #ccc',marginBottom:'6rem'}}></iframe></div>
             </div>
         )
