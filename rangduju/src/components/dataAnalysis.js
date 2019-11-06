@@ -155,6 +155,15 @@ class DataAnalysis extends React.Component {
         {/* <div className="last">
           <img src={require(this.state.value === 0 ? '../images/renchi.png' : '../images/yeshu.png')} alt="数据分析"></img>
         </div> */}
+        
+        <div className='modular'>
+          <div className="title1"><p>媒体报道</p></div>
+          <div className='dis-flex meit'>
+          <a href='https://36kr.com/p/5222672' rel="noopener noreferrer" target="_blank"><div className='dis-flex meit1'><div className='ke'><img src={require('../images/36.png')} alt="36氪"></img></div><p>36氪首发|「让渡居」获200万元种子轮融 资，借助科技打造高性价比城市民宿。</p></div></a>
+          <a href='http://www.ctcnn.com/html/2019-07-17/18120540.html#PPN=hotel' rel="noopener noreferrer" target="_blank"><div className='dis-flex meit2'><div className='jl'><img src={require('../images/jl.png')} alt="劲旅"></img></div><p><span className='pho'>让渡居：</span>「金融思维」下的城市民宿新玩法。</p></div></a>
+          </div>
+        </div>
+
       </div>
     )
   }

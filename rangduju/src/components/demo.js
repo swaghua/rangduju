@@ -1,6 +1,9 @@
 import React from 'react';
 
 class Demo extends React.Component {
+    componentDidMount() {
+        document.title = '合作案例-让渡居'
+    }
     render() {
         return (
             <div className='demo'>

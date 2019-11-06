@@ -54,11 +54,11 @@ class Top extends React.Component {
                 </div>
                 <div className="bottom">
                     <ul className="dis-flex collaborate">
-                        <li><a href="https://nuan.io/hello-wechat" rel="noopener noreferrer" target="_blank"><img src={require("../images/nf.jpg")} className="nf" alt="暖房直租"></img></a></li>
+                        <li><a href="https://nuan.io/hello-wechat" rel="noopener noreferrer" target="_blank"><img src={require("../images/nf.png")} className="nf" alt="暖房直租"></img></a></li>
                         <li><a href="http://www.huohetech.com/" rel="noopener noreferrer" target="_blank"><img src={require("../images/he.png")} className="hh" alt="火河智能"></img></a></li>
-                        <li><a href="http://www.hkhplus.com/index/platform" rel="noopener noreferrer" target="_blank"><img src={require("../images/as.jpg")} className="as" alt="艾仕佳科技"></img></a></li>
-                        <li><a href="http://www.hoolihome.com/" rel="noopener noreferrer" target="_blank"><img src={require("../images/hl.jpg")} className="hl" alt="全球房产租售平台"></img></a></li>
-                        <li><a href="http://www.delsk.com/" rel="noopener noreferrer" target="_blank"><img src={require("../images/de.jpg")} className="de" alt="戴尔斯克海外地产"></img></a></li>
+                        <li><a href="http://www.hkhplus.com/index/platform" rel="noopener noreferrer" target="_blank"><img src={require("../images/as.png")} className="as" alt="艾仕佳科技"></img></a></li>
+                        <li><a href="https://www.ikea.cn/cn/zh/" rel="noopener noreferrer" target="_blank"><img src={require("../images/yj.png")} className="hl" alt="宜家"></img></a></li>
+                        <li><a href="https://airtable.com/" rel="noopener noreferrer" target="_blank"><img src={require("../images/atb.png")} className="de" alt="Airtable"></img></a></li>
                         <li><a href="https://space.bilibili.com/303517323/" rel="noopener noreferrer" target="_blank"><img src={require("../images/wj.png")} className="wj" alt="租房五金少女"></img></a></li>
                     </ul>
                     <img src={require("../images/组10.jpg")} alt="合作方" className="pc"></img>
