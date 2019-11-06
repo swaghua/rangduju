@@ -41,7 +41,7 @@ class Head extends React.Component {
           <Link to="/"><img src={require("../images/logo.png")} alt="返回首页"></img></Link>
         </Menu.Item>
         <Menu.Item key="demo">
-          <Link to="/demo">房源展示</Link>
+          <Link to="/demo">合作案例</Link>
         </Menu.Item>
         <Menu.Item key="faq">
           <Link to="/faq">常见疑惑</Link>
