@@ -41,7 +41,7 @@ class Opportunity extends React.Component {
                             <Card title={item.title}>{item.content}</Card>
                         </List.Item>
                     )}
-                />,
+                />
             </div>
         )
     }
