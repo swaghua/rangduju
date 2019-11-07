@@ -7,6 +7,7 @@ import Demo from './demo';
 import Cooperation from './cooperation';
 import About from './about';
 import Doubt from './doubt';
+import Prediction from "./prediction";
 
 // const { SubMenu } = Menu;
 
@@ -58,6 +59,9 @@ class Head extends React.Component {
         <Menu.Item key="foot">
         <a href='http://rangduju.mikecrm.com/SlDriig' rel="noopener noreferrer" target="_blank" className='highlight'>潜力预测</a>
         </Menu.Item>
+        {/*<Menu.Item key="prediction">*/}
+        {/*  <Link to="/prediction">潜力预测</Link>*/}
+        {/*</Menu.Item>*/}
       </Menu>
       </div>
       <Route exact path="/" component={Home}></Route>
@@ -65,6 +69,7 @@ class Head extends React.Component {
       <Route path="/faq" component={Doubt}></Route>
       <Route path="/cooperation" component={Cooperation}></Route>
       <Route path="/about" component={About}></Route>
+      <Route path="/prediction" component={Prediction}></Route>
       </div>
       </Router>
     );
