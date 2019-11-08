@@ -1,0 +1,39 @@
+.prediction-page {
+    padding: 0 5rem;
+}
+.prediction-top {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+.prediction-form {
+    max-width: 24rem;
+}
+.ant-input, .ant-btn {
+    height: 2.5rem;
+}
+.input-phone-number {
+    width: 18rem;
+}
+.button-captcha {
+    width: 5rem;
+    margin-left: 1rem;
+}
+.button-summit {
+    width: 100%;
+}
+.p-intro {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+    color: #7D7E84;
+}
+.title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+.img-map {
+    width: 40rem;
+    height: 33rem;
+}
