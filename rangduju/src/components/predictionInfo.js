@@ -64,10 +64,10 @@ class PredictionInfo extends React.Component {
                     </div>
                     <div className="right-graph">
                         <div className="price-graph">
-                            {/* 此处为相同小区相同户型的长租价格的频数分布直方图 */}
+                            相同小区相同户型的长租价格的频数分布直方图
                         </div>
                         <div className="empty-graph">
-                            {/* 此处为相同小区相同户型的基础空置天数的频数分布直方图 */}
+                            相同小区相同户型的基础空置天数的频数分布直方图
                         </div>
                     </div>
                 </div>

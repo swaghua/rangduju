@@ -25,7 +25,7 @@
     display: flex;
     justify-content: space-between;
     margin-top: 5rem;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
     border-bottom: #E1E2E8 1px solid;
 }
 .prediction-part1 .left-form {
@@ -53,8 +53,8 @@
 }
 
 .prediction-part2 {
-    margin-top: 2rem;
-    padding-bottom: 2rem;
+    margin-top: 3rem;
+    padding-bottom: 3rem;
     border-bottom: #E1E2E8 1px solid;
 }
 .prediction-part2 .prediction-info {
@@ -101,9 +101,9 @@
 }
 
 .prediction-part3 {
-    margin-top: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: #E1E2E8 1px solid;
+    margin-top: 3rem;
+    /*padding-bottom: 3rem;*/
+    /*border-bottom: #E1E2E8 1px solid;*/
 }
 .prediction-part3 .ant-table .highlight {
     font-size: 1.3rem;
@@ -122,4 +122,42 @@
     width: 47%;
     height: 100%;
     border: #4D4D4D 1px solid;
+}
+.prediction-part3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.prediction-part4 {
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+}
+.prediction-part4 .strategy-info div {
+    margin-bottom: 2rem;
+}
+.prediction-part4 .strategy-info div span {
+    font-size: 0.8rem;
+    color: #101010;
+}
+.prediction-part4 .strategy-info div .strategy-label {
+    margin-right: 1rem;
+}
+.prediction-part4 .strategy-info div .strategy-label2 {
+    margin-left: 4rem;
+}
+.prediction-part4 .strategy-info div .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #09A863;
+}
+.prediction-part4 .strategy-graph {
+    width: 100%;
+    height: 30rem;
+    border: #4D4D4D 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.prediction-part4 img {
+    width: 50%;
+    height: 100%;
 }

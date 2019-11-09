@@ -179,7 +179,7 @@ class PredictionAnalysis extends React.Component {
                         12个月通过热力图热度+指标来反映热度
                     </div>
                     <div className="analysis-season-graph-2">
-
+                        <img src={require('../images/prediction-analysis.png')} alt="" />
                     </div>
                 </div>,
             },

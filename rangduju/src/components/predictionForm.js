@@ -83,7 +83,7 @@ class PredictionForm extends React.Component {
                 </div>
                 <div className="right-map">
                     {/* 这里以后换成 map API */}
-                    <img src={require("../images/staticmap.png")} className="img-map" alt="map"/>
+                    <img src={require("../images/prediction-staticmap.png")} className="img-map" alt="map"/>
                 </div>
             </div>
         )
