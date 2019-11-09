@@ -57,6 +57,22 @@
     padding-bottom: 3rem;
     border-bottom: #E1E2E8 1px solid;
 }
+.prediction-part2 .decorate {
+    width: 13rem;
+    position: absolute;
+    right: 0;
+    margin-top: -260px;
+}
+.prediction-part2 .decorate span {
+    display: inline-block;
+    transform: translateX(80%) translateY(180%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.prediction-part2 .decorate img {
+    width: 13rem;
+}
 .prediction-part2 .prediction-info {
     display: flex;
     justify-content: space-between;

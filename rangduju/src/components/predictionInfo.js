@@ -24,6 +24,11 @@ class PredictionInfo extends React.Component {
             <div className="prediction-part2">
                 <h1 className="title h-inline">房源基本信息</h1>
                 <h2 className="subtitle h-inline">数据汇总分析自与您房源同户型同小区的 {this.state.houseNumber} 套正在发布长租房源。</h2>
+                <div className="decorate">
+                    <span>案例</span>
+                    <img src={require("../images/zhuangshi.png")} alt="装饰"></img>
+                </div>
+
                 <div className="prediction-info">
                     <div className="left-info">
                         <div>
