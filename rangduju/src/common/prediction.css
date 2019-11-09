@@ -1,6 +1,12 @@
 .prediction-page {
     padding: 0 5rem;
 }
+.ant-input, .ant-btn {
+    height: 2.5rem;
+}
+.ant-spin-container ul {
+    display: none;
+}
 .title {
     font-size: 2rem;
     font-weight: bold;
@@ -11,8 +17,8 @@
     font-weight: normal;
     margin-left: 2rem;
 }
-.ant-input, .ant-btn {
-    height: 2.5rem;
+.h-inline {
+    display: inline-block;
 }
 
 .prediction-part1 {
@@ -50,9 +56,6 @@
     margin-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: #E1E2E8 1px solid;
-}
-.prediction-part2 .h-inline {
-    display: inline-block;
 }
 .prediction-part2 .prediction-info {
     display: flex;
@@ -94,5 +97,29 @@
 .prediction-part2 .prediction-info .right-graph div {
     width: 40rem;
     height: 47%;
+    border: #4D4D4D 1px solid;
+}
+
+.prediction-part3 {
+    margin-top: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: #E1E2E8 1px solid;
+}
+.prediction-part3 .ant-table .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #09A863;
+}
+.prediction-part3 .ant-table .focus {
+    background-color: #08CC16;
+}
+.prediction-part3 .ant-table .analysis-season-graph {
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+}
+.prediction-part3 .ant-table .analysis-season-graph div {
+    width: 47%;
+    height: 100%;
     border: #4D4D4D 1px solid;
 }

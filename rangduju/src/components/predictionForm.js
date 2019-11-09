@@ -4,6 +4,10 @@ import { Form, Input, Button, Row, Col, Cascader } from 'antd';
 const houseType = [
     // 户型信息需要更改
     {
+        value: '独立房间',
+        label: '独立房间',
+    },
+    {
         value: '一居室',
         label: '一居室',
     },

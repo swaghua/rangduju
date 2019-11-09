@@ -2,6 +2,7 @@ import React from "react";
 
 import PredictionForm from "./predictionForm";
 import PredictionInfo from "./predictionInfo";
+import PredictionAnalysis from "./predictionAnalysis";
 
 import '../common/prediction.css';
 
@@ -12,6 +13,7 @@ class Prediction extends React.Component {
             <div className="prediction-page">
                 <PredictionForm />
                 <PredictionInfo />
+                <PredictionAnalysis />
             </div>
         )
     }
