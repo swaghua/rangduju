@@ -32,7 +32,7 @@ class Home extends React.Component {
                         <p>
                             无论您是希望有机会参与共享经济，还是只想让空置房屋变现，或者二者皆有，我们都可以帮助您加入到这一进程。我们团队有丰富的专业机构从业经历，具有深厚的技术功底，对行业有深入的理解、洞察，有信心对市场波动做出最快反应，并保证房客入住体验的标准化服务。而这一切专业经验都会服务于您！
                         </p>
-                        <p className='btn1'><Button icon="eye" href='http://rangduju.mikecrm.com/ULvW6oL' target="_blank">预约看房</Button></p>
+                        <p className='btn1'><Button icon="eye" href='http://rangduju.mikecrm.com/ULvW6oL' target="_blank">成为房东</Button></p>
                     </div>
                 </div>
                 {/* <div className="clear"></div> */}
