@@ -1,39 +1,179 @@
 .prediction-page {
     padding: 0 5rem;
 }
-.prediction-top {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 5rem;
-}
-.prediction-form {
-    max-width: 24rem;
-}
 .ant-input, .ant-btn {
     height: 2.5rem;
 }
-.input-phone-number {
-    width: 18rem;
-}
-.button-captcha {
-    width: 5rem;
-    margin-left: 1rem;
-}
-.button-summit {
-    width: 100%;
-}
-.p-intro {
-    margin: 0;
-    font-size: 0.9rem;
-    line-height: 1.75rem;
-    color: #7D7E84;
+.ant-spin-container ul {
+    display: none;
 }
 .title {
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 3rem;
 }
-.img-map {
+.subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    margin-left: 2rem;
+}
+.h-inline {
+    display: inline-block;
+}
+
+.prediction-part1 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+    padding-bottom: 3rem;
+    border-bottom: #E1E2E8 1px solid;
+}
+.prediction-part1 .left-form {
+    width: 24rem;
+}
+.prediction-part1 .left-form .input-phone-number {
+    width: 18rem;
+}
+.prediction-part1 .left-form .button-captcha {
+    width: 5rem;
+    margin-left: 1rem;
+}
+.prediction-part1 .left-form .p-intro {
+    margin: 0;
+    font-size: 0.9rem;
+    line-height: 1.75rem;
+    color: #7D7E84;
+}
+.prediction-part1 .left-form .button-summit {
+    width: 100%;
+}
+.prediction-part1 .right-map .img-map {
     width: 40rem;
     height: 33rem;
+}
+
+.prediction-part2 {
+    margin-top: 3rem;
+    padding-bottom: 3rem;
+    border-bottom: #E1E2E8 1px solid;
+}
+.prediction-part2 .decorate {
+    width: 13rem;
+    position: absolute;
+    right: 0;
+    margin-top: -260px;
+}
+.prediction-part2 .decorate span {
+    display: inline-block;
+    transform: translateX(80%) translateY(180%);
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.prediction-part2 .decorate img {
+    width: 13rem;
+}
+.prediction-part2 .prediction-info {
+    display: flex;
+    justify-content: space-between;
+}
+.prediction-part2 .prediction-info .left-info {
+    width: 24rem;
+    padding-left: 3rem;
+}
+.prediction-part2 .prediction-info .left-info div {
+    margin-bottom: 2.5rem;
+}
+.prediction-part2 .prediction-info .left-info div:nth-child(1),
+.prediction-part2 .prediction-info .left-info div:nth-child(2) {
+    width: 50%;
+    display: inline-block;
+}
+.prediction-part2 .prediction-info .left-info div span {
+    font-size: 0.8rem;
+    color: #101010;
+}
+.prediction-part2 .prediction-info .left-info div .left-info-label {
+    display: block;
+    margin-bottom: 1rem;
+}
+.prediction-part2 .prediction-info .left-info div .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #09A863;
+}
+.prediction-part2 .prediction-info .left-info div .highlight:nth-child(4) {
+    margin-left: 3rem;
+}
+.prediction-part2 .prediction-info .right-graph {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.prediction-part2 .prediction-info .right-graph div {
+    width: 40rem;
+    height: 47%;
+    border: #4D4D4D 1px solid;
+}
+
+.prediction-part3 {
+    margin-top: 3rem;
+    /*padding-bottom: 3rem;*/
+    /*border-bottom: #E1E2E8 1px solid;*/
+}
+.prediction-part3 .ant-table .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #09A863;
+}
+.prediction-part3 .ant-table .focus {
+    background-color: #08CC16;
+}
+.prediction-part3 .ant-table .analysis-season-graph {
+    display: flex;
+    justify-content: space-between;
+    height: 20rem;
+}
+.prediction-part3 .ant-table .analysis-season-graph div {
+    width: 47%;
+    height: 100%;
+    border: #4D4D4D 1px solid;
+}
+.prediction-part3 img {
+    width: 100%;
+    height: 100%;
+}
+
+.prediction-part4 {
+    margin-top: 3rem;
+    padding-bottom: 10rem;
+}
+.prediction-part4 .strategy-info div {
+    margin-bottom: 2rem;
+}
+.prediction-part4 .strategy-info div span {
+    font-size: 0.8rem;
+    color: #101010;
+}
+.prediction-part4 .strategy-info div .strategy-label {
+    margin-right: 1rem;
+}
+.prediction-part4 .strategy-info div .strategy-label2 {
+    margin-left: 4rem;
+}
+.prediction-part4 .strategy-info div .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #09A863;
+}
+.prediction-part4 .strategy-graph {
+    width: 100%;
+    height: 30rem;
+    border: #4D4D4D 1px solid;
+    display: flex;
+    justify-content: space-between;
+}
+.prediction-part4 img {
+    width: 50%;
+    height: 100%;
 }
