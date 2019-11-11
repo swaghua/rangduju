@@ -1,5 +1,6 @@
 import React from "react";
 import {Icon, Table, Tooltip} from 'antd';
+import classNames from 'classnames';
 
 class PredictionAnalysis extends React.Component {
     tableColumns() {
@@ -9,11 +10,16 @@ class PredictionAnalysis extends React.Component {
             {
                 title: ' ',
                 dataIndex: 'type',
-                width: '15.5rem',
+                width: '16rem',
             },
             {
                 title: '独立房间',
                 dataIndex: 'independent',
+                className: classNames({
+                    'independent': true,
+                    'focus': this.state.focusColumn === 'independent',
+                }),
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -29,6 +35,11 @@ class PredictionAnalysis extends React.Component {
             {
                 title: '一居室',
                 dataIndex: 'oneRoom',
+                className: classNames({
+                    'oneRoom': true,
+                    'focus': this.state.focusColumn === 'oneRoom',
+                }),
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -49,6 +60,11 @@ class PredictionAnalysis extends React.Component {
                     </Tooltip>
                 </span>,
                 dataIndex: 'twoRoom',
+                className: classNames({
+                    'twoRoom': true,
+                    'focus': this.state.focusColumn === 'twoRoom',
+                }),
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -64,6 +80,11 @@ class PredictionAnalysis extends React.Component {
             {
                 title: '三居室',
                 dataIndex: 'threeRoom',
+                className: classNames({
+                    'threeRoom': true,
+                    'focus': this.state.focusColumn === 'threeRoom',
+                }),
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -79,6 +100,8 @@ class PredictionAnalysis extends React.Component {
             {
                 title: '综合',
                 dataIndex: 'total',
+                className: 'total',
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -94,6 +117,8 @@ class PredictionAnalysis extends React.Component {
             {
                 title: '经济型酒店',
                 dataIndex: 'hotel',
+                className: 'hotel',
+                align: 'center',
                 render: (value, row, index) => {
                     const obj = {
                         children: value,
@@ -139,7 +164,6 @@ class PredictionAnalysis extends React.Component {
                 twoRoom: <span>{this.state.data["2"].twoRoom}</span>,
                 threeRoom: <span>{this.state.data["2"].threeRoom}</span>,
                 total: <span>{this.state.data["2"].total}</span>,
-
             },
             {
                 key: '3',
@@ -154,7 +178,7 @@ class PredictionAnalysis extends React.Component {
             {
                 key: '4',
                 type: '平均出租价格',
-                independent: <span className="highlight">¥{this.state.data["1"].independent}</span>,
+                independent: <span>¥{this.state.data["1"].independent}</span>,
                 oneRoom: '¥' + 216,
                 twoRoom: '¥' + 238,
                 threeRoom: '¥' + 298,
@@ -173,7 +197,7 @@ class PredictionAnalysis extends React.Component {
             },
             {
                 key: '6',
-                type: '季节性因素',
+                type: <span>季节性因素</span>,
                 independent: <div className="analysis-season-graph">
                     <div className="analysis-season-graph-1">
                         12个月通过热力图热度+指标来反映热度
@@ -210,7 +234,8 @@ class PredictionAnalysis extends React.Component {
 
                 },
             },
-            // focusRow: 0,
+            // 当前需要高亮的列
+            focusColumn: 'oneRoom',
         };
     }
 
@@ -219,24 +244,8 @@ class PredictionAnalysis extends React.Component {
             <div className="prediction-part3">
                 <h1 className="title h-inline">短租市场分析</h1>
                 <h2 className="subtitle h-inline">明确竞争行情。</h2>
-                <Table
-                    columns={this.tableColumns()}
-                    dataSource={this.tableRows()}
-                    // 与表格样式有关的代码，以后再进行优化
-                    // onRow={() => {
-                    //     return {
-                    //         // 鼠标移入行
-                    //         onMouseEnter: event => {
-                    //             let self = event.target;
-                    //             let tr = self.closest('tr');
-                    //             let trId = tr.dataset.rowKey;
-                    //             this.setState({ focus: trId, });
-                    //             console.log(trId)
-                    //         },
-                    //     }
-                    // }}
-                    // rowClassName={ record => record.id === this.state.focus ? 'focus' : '' }
-                />
+                {/* 后续考虑自己实现表格进行重构，取消使用 ant design 表格，以便于修改样式 */}
+                <Table columns={this.tableColumns()} dataSource={this.tableRows()} />
             </div>
         )
     }
