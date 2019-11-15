@@ -17,6 +17,8 @@ class PredictionStrategy extends React.Component {
                     <div>
                         <span className="strategy-label">最优间夜价格</span>
                         <span className="highlight">¥{this.state.price}</span><span>/间夜</span>
+                    </div>
+                    <div>
                         <span className="strategy-label strategy-label2">是日基础租金收益的</span>
                         <span className="highlight">{this.state.multiple}倍</span>
                     </div>
