@@ -6,6 +6,7 @@ import PredictionAnalysis from "./predictionAnalysis";
 import PredictionStrategy from "./predictionStrategy";
 
 import '../common/prediction.css';
+import '../common/predictionAdapted.css'
 
 
 class Prediction extends React.Component {
