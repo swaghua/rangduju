@@ -1,11 +1,11 @@
-import React from "react";
+import React from "react"
 
-import PredictionForm from "./predictionForm";
-import PredictionInfo from "./predictionInfo";
-import PredictionAnalysis from "./predictionAnalysis";
-import PredictionStrategy from "./predictionStrategy";
+import PredictionForm from "./predictionForm"
+import PredictionInfo from "./predictionInfo"
+import PredictionAnalysisNewVersion from './predictionAnalysisNewVersion'
+import PredictionStrategy from "./predictionStrategy"
 
-import '../common/prediction.css';
+import '../common/prediction.css'
 import '../common/predictionAdapted.css'
 
 
@@ -15,11 +15,11 @@ class Prediction extends React.Component {
             <div className="prediction-page">
                 <PredictionForm />
                 <PredictionInfo />
-                <PredictionAnalysis />
+                <PredictionAnalysisNewVersion />
                 <PredictionStrategy />
             </div>
         )
     }
 }
 
-export default Prediction;
+export default Prediction
