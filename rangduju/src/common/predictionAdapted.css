@@ -41,6 +41,7 @@
     }
     .prediction-part1 .left-form .button-captcha {
         width: 5rem;
+        margin-left: 0;
         float: right;
     }
     .prediction-part1 .left-form .p-intro {
@@ -72,15 +73,15 @@
         right: 0;
         margin-top: -230px;
     }
-    .prediction-part2 .decorate img {
-        width: 6rem;
-    }
     .prediction-part2 .decorate span {
         display: inline-block;
         transform: translateX(80%) translateY(170%);
         font-size: 1.5rem;
         font-weight: bold;
         color: white;
+    }
+    .prediction-part2 .decorate img {
+        width: 6rem;
     }
     .prediction-part2 .prediction-info {
         display: flex;
@@ -133,44 +134,63 @@
         padding-bottom: 3rem;
         border-bottom: #E1E2E8 1px solid;
     }
-    .prediction-part3 .ant-table-wrapper {
+    .prediction-part3 .market-table-wrapper {
         overflow-x: scroll;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
-    /* 取消 ant design 表格的默认样式：边框、hover时改变背景颜色 */
-    .prediction-part3 .ant-table-thead > tr > th,
-    .prediction-part3 .ant-table-tbody > tr > td {
-        border: 1px white solid !important;
-        background-color: white !important;
+    .prediction-part3 .market-table {
+        width: 200%;
     }
-    .prediction-part3 .ant-table-tbody .hotel {
-        border-left: 1px #E1E2E8 solid !important;
+    .prediction-part3 .market-table,
+    .prediction-part3 .market-table .market-table-head,
+    .prediction-part3 .market-table .market-table-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    .prediction-part3 .ant-table-tbody > tr > td:nth-child(1) {
-        width: 10rem !important;
+    .prediction-part3 .market-table .market-table-row {
+        display: flex;
+        justify-content: space-between;
     }
-    /* 调整季节性因素单元格文字位置 */
-    .prediction-part3 .ant-table-tbody > tr:nth-child(6) > td:nth-child(1) {
-        padding-top: 0;
-        padding-bottom: 18rem;
+    .prediction-part3 .market-table .market-table-item {
+        display: inline-block;
+        width: 8rem;
+        height: 4rem;
+        text-align: center;
     }
-    .prediction-part3 .ant-table-tbody .focus {
+    .prediction-part3 .market-table .market-table-row .market-table-item:nth-child(1) {
+        width: 10rem;
+        padding: 1rem 0;
+    }
+    .prediction-part3 .market-table .market-table-row:nth-child(n+3) .market-table-item:nth-child(1),
+    .prediction-part3 .market-table .market-table-row .market-table-item:nth-child(n+2) {
+        line-height: 4rem;
+        padding: 0;
+    }
+    .prediction-part3 .market-table .market-table-body .market-table-row .market-table-item:nth-child(7) {
+        border-left: #E1E2E8 1px solid;
+    }
+    .prediction-part3 .market-table .focus {
         font-size: 1.3rem;
         font-weight: bold;
         color: #09A863;
     }
-    .prediction-part3 .ant-table-tbody .analysis-season-graph {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-left: 1rem;
+    .prediction-part3 .analysis-season {
+        display: block;
+        width: 100%;
         height: 30rem;
     }
-    .prediction-part3 .ant-table-tbody .analysis-season-graph div {
+    .prediction-part3 .analysis-season-item {
+        width: 100%;
+        height: 3rem;
+    }
+    .prediction-part3 .analysis-season-graph {
         width: 100%;
         height: 47%;
         border: #4D4D4D 1px solid;
     }
-    .prediction-part3 img {
+    .prediction-part3 .analysis-season-graph img {
         width: 100%;
         height: 100%;
     }
@@ -209,5 +229,4 @@
         width: 100%;
         height: 50%;
     }
-
 }
