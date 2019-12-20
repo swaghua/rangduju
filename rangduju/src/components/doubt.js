@@ -57,7 +57,7 @@ class Doubt extends React.Component {
     render() {
         return (
             <div className="doubt">
-                <div className="text-center distance">
+                <div className="text-center distance doubt-header">
                     <img src={require("../images/chahua2.png")} alt="常见疑惑"></img>
                 </div>
                 {/* <div className='list-a'>
