@@ -8,7 +8,12 @@
 .distancephone{
     padding: 0 19%;
 }
-
+.doubt-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
 .text-center{
     text-align: center;
     display: flex;
@@ -143,6 +148,14 @@ color: #08CC16!important;
     width: 1.25rem;
 }
 @media only screen and (max-width: 992px){
+    .dataAnalysis .modular-media {
+        margin-top: 2rem !important;
+        flex-direction: column;
+    }
+    .dataAnalysis .modular-media a:nth-child(1) {
+        margin-right: 0 !important;
+    }
+
     .foot .qrcode-group {
         margin: 0 auto;
     }
@@ -322,7 +335,7 @@ color: #08CC16!important;
         margin-top: 1.5rem;
     }
     .operate .item .item_title{
-        margin-bottom: .75rem; 
+        margin-bottom: .75rem;
     }
     .operate .item .item_title > p:first-child{
         color: #fff!important;
@@ -461,7 +474,7 @@ color: #08CC16!important;
 .doubt img{
     width: 67%;
     margin-top: 1.5625rem;
-    margin-bottom: 5.9375rem; 
+    margin-bottom: 5.9375rem;
 }
 /* .doubt dt{
     font-size: 1.25rem;
@@ -576,7 +589,7 @@ color: #08CC16!important;
     width: 100%;
 }
 .top .right{
-    padding-top:8%; 
+    padding-top:8%;
     width: 46%;
     text-align: right;
 }
@@ -599,14 +612,14 @@ color: #08CC16!important;
 .top .right .label1{
     font-size: 1rem;
     margin-bottom: 1.8rem;
-    
+
 }
 .top .right .label2{
     margin-bottom: 0.5rem
 }
 .top .right .label3{
     margin-bottom: 0;
-    margin-top: 0.5rem; 
+    margin-top: 0.5rem;
 }
 .top .right .label1 > strong{
     font-size: 1.375rem;
@@ -653,7 +666,7 @@ color: #08CC16!important;
     width: 46%;
 }
 .top .bottom .collaborate > li{
-    margin-left:5%; 
+    margin-left:5%;
 }
 .top .bottom .collaborate > li > a > img{
     height: 90%;
@@ -772,7 +785,7 @@ color: #08CC16!important;
     color: #4D4D4D;
     margin: 0;
     white-space: nowrap;
-    
+
     /* margin-left: -70%; */
 }
 .operate .item > div{

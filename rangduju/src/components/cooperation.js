@@ -37,7 +37,7 @@ class Cooperation extends React.Component{
     render(){
         return(
             <div className="cooperation">
-                <div className="text-center">
+                <div className="text-center doubt-header">
                     <img src={require("../images/ruhehezuochangtu.png")} alt="常见疑惑"></img>
                 </div>
                 <dl className="distance">
