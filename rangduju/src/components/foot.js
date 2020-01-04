@@ -38,6 +38,11 @@ class Foot extends React.Component {
                                 隐私保护
                         </a>
                         </label>
+                        <label>
+                            <a href="/sitemap.xml" rel="noopener noreferrer" target="_blank">
+                                网站地图
+                            </a>
+                        </label>
                     </div>
                     <div className="text-center">
                         <label className="label_frist">媒体平台</label>

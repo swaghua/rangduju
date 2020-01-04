@@ -425,6 +425,9 @@ color: #08CC16!important;
     margin: 0;
     margin-bottom: 5.5625rem;
 }
+url {
+    display: block;
+}
 /*.about .title{*/
 /*    font-size: 1.625rem;*/
 /*    font-weight: 600;*/
