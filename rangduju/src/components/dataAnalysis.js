@@ -14,6 +14,7 @@ import 'echarts/lib/component/title';
 import 'echarts/lib/component/legend';
 import 'echarts/lib/component/markPoint';
 import ReactEcharts from 'echarts-for-react';
+import moment from 'moment'
 
 class DataAnalysis extends React.Component {
   componentWillMount() {
@@ -30,7 +31,7 @@ class DataAnalysis extends React.Component {
     };
   }
 
-  getdata =async () => {
+  getdata = async () => {
     let peopleArr=[];
     let monthArr=[];
     let people=0,day=0;
@@ -41,19 +42,28 @@ class DataAnalysis extends React.Component {
         'Content-Type': 'application/json'
       }
     }
-    for(let i=6;i<13;i++){
-    await fetch(
-      'https://api.rangduju.com/public/rent-info?year=2019&status=已完成&month='+i, init
-    )
-      .then(res => res.json())
-      .then(data => {
-        console.log(data);
-        people += data.data.peopleSum;
-        day += data.data.monthSum;
-        monthArr.push(day)
-        peopleArr.push(people);
-      })
-      .catch(e => console.log('错误:', e))
+    let thisYear = Number(moment().format("YYYY"))
+    let thisMonth = Number(moment().format("MM"))
+    let startTime = 2019.06
+    let thisTime = thisYear + 0.01 * thisMonth
+    for (let y = 2019; y <= thisYear; y++) {
+      for (let m = 1; m <= 12; m++) {
+        let t = y + 0.01 * m
+        if (startTime <= t && t <= thisTime) {
+          // console.log('time', y, m)
+          await fetch(
+              `https://api.rangduju.com/public/rent-info?year=${y}&status=已完成&month=${m}`, init
+          ).then(res => res.json())
+          .then(data => {
+            console.log(data);
+            people += data.data.peopleSum;
+            day += data.data.monthSum;
+            monthArr.push(day)
+            peopleArr.push(people);
+          })
+          .catch(e => console.log('错误:', e))
+        }
+      }
     }
     this.setState({
       sum:people,
@@ -63,14 +73,36 @@ class DataAnalysis extends React.Component {
     })
   }
 
+  formatZero(num, len) {
+    if(String(num).length > len) return num;
+    return (Array(len).join(0) + num).slice(-len);
+  }
+
   getOption = () => {
+    let markList = []
+    let thisYear = Number(moment().format("YYYY"))
+    let thisMonth = Number(moment().format("MM"))
+    let startTime = 2019.06
+    let thisTime = thisYear + 0.01 * thisMonth
+    for (let y = 2019; y <= thisYear; y++) {
+      for (let m = 1; m <= 12; m++) {
+        let t = y + 0.01 * m
+        if (startTime <= t && t <= thisTime) {
+          let year = this.formatZero(y, 4)
+          let month = this.formatZero(m, 2)
+          let mark = year + '-' + month
+          markList.push(mark)
+        }
+      }
+    }
+
     let option = {
       tooltip: {
         trigger: 'axis',
       },
       xAxis: {
         boundaryGap: false,
-        data: ['2019-06', '2019-07', '2019-08', '2019-09', '2019-10', '2019-11', '2019-12']
+        data: markList,
       },
       yAxis: {
         type: 'value'
@@ -110,13 +142,13 @@ class DataAnalysis extends React.Component {
           type: 'line',   //这块要定义type类型，柱形图是bar,饼图是pie
           data: this.state.data,
           smooth: true,
-          itemStyle : { 
-            normal : { 
+          itemStyle : {
+            normal : {
             color:'#00C979', //改变折线点的颜色
-            lineStyle:{ 
+            lineStyle:{
             color:'#076EDF' //改变折线颜色
-            } 
-            } 
+            }
+            }
             },
         }
       ]
@@ -155,7 +187,7 @@ class DataAnalysis extends React.Component {
         {/* <div className="last">
           <img src={require(this.state.value === 0 ? '../images/renchi.png' : '../images/yeshu.png')} alt="数据分析"></img>
         </div> */}
-        
+
         <div className='modular'>
           <div className="title1"><p>媒体报道</p></div>
           <div className='modular-media'>
