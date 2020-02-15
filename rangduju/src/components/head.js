@@ -42,23 +42,23 @@ class Head extends React.Component {
                             <Menu.Item key="home"  className="home">
                                 <Link to="/"><img src={require("../images/logo.png")} alt="返回首页"></img></Link>
                             </Menu.Item>
-                            <Menu.Item key="demo">
-                                <Link to="/demo">合作案例</Link>
+                            <Menu.Item key="cooperation">
+                                <Link to="/cooperation">如何合作</Link>
                             </Menu.Item>
                             <Menu.Item key="faq">
                                 <Link to="/faq">常见疑惑</Link>
                             </Menu.Item>
-                            <Menu.Item key="cooperation">
-                                <Link to="/cooperation">如何合作</Link>
+                            <Menu.Item key="demo">
+                                <Link to="/demo">合作案例</Link>
                             </Menu.Item>
                             <Menu.Item key="about">
                                 <Link to="/about">关于我们</Link>
                             </Menu.Item>
-                            <Menu.Item key="landlord">
-                                <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank">成为房东</a>
+                            <Menu.Item key="">
+                                <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank" className='highlight'></a>
                             </Menu.Item>
-                            <Menu.Item key="foot">
-                                <a href='http://rangduju.mikecrm.com/SlDriig' rel="noopener noreferrer" target="_blank" className='highlight'>潜力预测</a>
+                            <Menu.Item key="landlord">
+                                <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank" className='highlight'>成为房东</a>
                             </Menu.Item>
                             {/*<Menu.Item key="prediction">*/}
                             {/*  <Link to="/prediction">潜力预测</Link>*/}
