@@ -26,6 +26,11 @@ class Foot extends React.Component {
                                 刺猬实习
                         </a>
                         </label>
+                         <label>
+                             <a href="https://www.shixiseng.com/com/com_rzjx29rycxgg" rel="noopener noreferrer" target="_blank">
+                                实习僧
+                        </a>
+                        </label>
                     </div>
                     <div className="nudge">
                         <label className="label_frist">条款</label>
