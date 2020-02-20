@@ -33,6 +33,34 @@ class Foot extends React.Component {
                         </label>
                     </div>
                     <div className="nudge">
+                        <label className="label_frist">友情链接</label>
+                        <label>
+                            <a href="https://nuan.io/hello-wechat" rel="noopener noreferrer" target="_blank">
+                                暖房
+                             </a>
+                        </label>
+                        <label>
+                            <a href="http://www.nnflow.com" rel="noopener noreferrer" target="_blank">
+                                冉SPA
+                            </a>
+                        </label>
+                        <label>
+                            <a href="https://www.myhostex.com" rel="noopener noreferrer" target="_blank">
+                                百居易
+                            </a>
+                        </label>
+                        <label>
+                            <a href="http://www.hoolihome.com" rel="noopener noreferrer" target="_blank">
+                                Hooli
+                            </a>
+                        </label>
+                        <label>
+                            <a href="https://hplustech.com" rel="noopener noreferrer" target="_blank">
+                                H+
+                            </a>
+                        </label>
+                    </div>
+                    <div className="nudge">
                         <label className="label_frist">条款</label>
                         <label>
                             <a href="https://mp.weixin.qq.com/s/YoqpzK5aiqZF8lNLZVchEg" rel="noopener noreferrer" target="_blank">
