@@ -55,15 +55,15 @@ a{
     /* 此处的 border 起到占位作用，否则整个工具栏的高度会因为下面那个高亮按钮边框的变化而发生改变 */
     border: .0625rem solid white;
 }
-.head .ant-menu-item:nth-child(14){
+.head .ant-menu-item:nth-child(12){
     border: .0625rem solid #d9d9d9;
     border-radius: 6px;
 }
-.head .ant-menu-item-active:nth-child(14){
+.head .ant-menu-item-active:nth-child(12){
     border: .0625rem solid #08CC16!important;
     border-bottom: .125rem solid #08CC16!important;
 }
-.head .ant-menu-item-active:nth-child(14) > a{
+.head .ant-menu-item-active:nth-child(12) > a{
 color: #08CC16!important;
 }
 .head .home,.home-active{
@@ -95,7 +95,7 @@ color: #08CC16!important;
 }
 .foot > div{
     /* flex:1; */
-    width: 25%;
+    width: 20%;
     float: left;
 }
 .foot div label{
