@@ -8,9 +8,9 @@ class Foot extends React.Component {
                 <div className="foot">
                     <div>
                         <label className="label_frist">联系我们</label>
-                        <label className="contact-info">北京市朝阳区建国路88号</label>
-                        <label className="contact-info">SOHO现代城B座，100025</label>
-                        <label className="contact-info">办公电话：010-85890977</label>
+                        <label className="contact-info">上海市嘉定区封周路655号</label>
+                        <label className="contact-info">14幢201室 JT5199</label>
+                        <label className="contact-info">办公电话：400-105-0805</label>
                         <label className="contact-info">周一到周五 9:00-19:00</label>
                         <label className="contact-info">电子邮箱：pr@rangduju.com</label>
                     </div>
@@ -30,34 +30,6 @@ class Foot extends React.Component {
                              <a href="https://www.shixiseng.com/com/com_rzjx29rycxgg" rel="noopener noreferrer" target="_blank">
                                 实习僧
                         </a>
-                        </label>
-                    </div>
-                    <div className="nudge">
-                        <label className="label_frist">友情链接</label>
-                        <label>
-                            <a href="https://nuan.io/hello-wechat" rel="noopener noreferrer" target="_blank">
-                                暖房
-                             </a>
-                        </label>
-                        <label>
-                            <a href="http://www.nnflow.com" rel="noopener noreferrer" target="_blank">
-                                冉SPA
-                            </a>
-                        </label>
-                        <label>
-                            <a href="https://www.myhostex.com" rel="noopener noreferrer" target="_blank">
-                                百居易
-                            </a>
-                        </label>
-                        <label>
-                            <a href="http://www.hoolihome.com" rel="noopener noreferrer" target="_blank">
-                                Hooli
-                            </a>
-                        </label>
-                        <label>
-                            <a href="https://hplustech.com" rel="noopener noreferrer" target="_blank">
-                                H+
-                            </a>
                         </label>
                     </div>
                     <div className="nudge">
