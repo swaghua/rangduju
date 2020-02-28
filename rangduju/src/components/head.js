@@ -54,6 +54,9 @@ class Head extends React.Component {
                             <Menu.Item key="about">
                                 <Link to="/about">关于我们</Link>
                             </Menu.Item>
+                            <Menu.Item key="blog">
+                                <a href="https://zhuanlan.zhihu.com/rangduju">让渡居说</a>
+                            </Menu.Item>
                             <Menu.Item key="landlord">
                                 <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank" className='highlight'>成为房东</a>
                             </Menu.Item>

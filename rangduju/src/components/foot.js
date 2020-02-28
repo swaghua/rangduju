@@ -10,9 +10,9 @@ class Foot extends React.Component {
                         <label className="label_frist">联系我们</label>
                         <label className="contact-info">上海市嘉定区封周路655号</label>
                         <label className="contact-info">14幢201室 JT5199</label>
-                        <label className="contact-info">办公电话：400-105-0805</label>
-                        <label className="contact-info">周一到周五 9:00-19:00</label>
-                        <label className="contact-info">电子邮箱：pr@rangduju.com</label>
+                        <label className="contact-info">400-105-0805</label>
+                        <label className="contact-info">周一到周五 7:00-22:00</label>
+                        <label className="contact-info">pr@rangduju.com</label>
                     </div>
                     <div className="nudge">
                         <label className="label_frist">加入我们</label>
