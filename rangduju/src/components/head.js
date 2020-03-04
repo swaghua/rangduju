@@ -8,6 +8,7 @@ import Cooperation from './cooperation';
 import About from './about';
 import Doubt from './doubt';
 import Prediction from "./prediction";
+import Landlord from "./landlord"
 import SiteMap from "./sitemap";
 
 // const { SubMenu } = Menu;
@@ -58,7 +59,8 @@ class Head extends React.Component {
                                 <a href="https://zhuanlan.zhihu.com/rangduju">让渡居说</a>
                             </Menu.Item>
                             <Menu.Item key="landlord">
-                                <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank" className='highlight'>成为房东</a>
+                                <Link to="/landlord">成为房东</Link>
+                                {/* <a href='http://rangduju.mikecrm.com/ULvW6oL' rel="noopener noreferrer" target="_blank" className='highlight'>成为房东</a> */}
                             </Menu.Item>
                             {/*<Menu.Item key="prediction">*/}
                             {/*  <Link to="/prediction">潜力预测</Link>*/}
@@ -70,6 +72,7 @@ class Head extends React.Component {
                     <Route path="/faq" component={Doubt}></Route>
                     <Route path="/cooperation" component={Cooperation}></Route>
                     <Route path="/about" component={About}></Route>
+                    <Route path="/landlord" component={Landlord}></Route>
                     <Route path="/prediction" component={Prediction}></Route>
                     <Route path="/sitemap.xml" component={SiteMap}></Route>
                 </div>
